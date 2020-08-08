@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Homework</title>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src='jscode.js'></script>
+    <style>
+
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+            background-image: url("leaves.jpg");
+            background-size: contain;
+        }
+
+        .navbar 
+        {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        .navbar a 
+        {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover 
+        {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active 
+        {
+            background-color: #666;
+            color: white;
+        }
+
+        .row 
+        {  
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .main 
+        {   
+            -ms-flex: 70%;
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        header
+        {
+            width: 1000px;
+            height: 300px;
+        }
+
+        img
+        {
+            width: 100%;
+            height: 400px;
+        }
+
+        table
+        {
+            text-align: center;
+        }
+
+        thead
+        {
+            font-size: 25px;
+        }
+
+        li
+        {
+            font-size: large;
+        }
+
+        #btntag
+        {
+            font-size: 20px;
+            border-style: double;
+
+        }
+
+        .footer 
+        {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+    </style>
+    </head>
+    <body>
+
+    <img src="tea.jpg"></img>
+
+    <div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="about_me.html">About Me</a>
+    </div>
+
+    <div class="row">
+  
+    <div class="main">
+    <h2 class="w3-card-4 w3-brown">What is the Science Behind Perfect Tea?</h2>
+    <h5 class="w3-card-4 w3-gray">Last Edit Date: 8 December 2019</h5>
+    <p>How much do we know about drink tea, which we drink from breakfast to night time in our country and 
+        consumed in considerable amount in the world? Types, how to participate in an adventure and 
+        entered our homes; do we know how to prepare the best way? Experts say the tea is not made correctly.
+        Tea ranks high on the list of the most consumed drinks in the world. Some love it, 
+        others can't wake up without drinking. In some countries, tea is a plant that is regularly drunk during 
+        the day and consumed within the region-specific culture.
+        Turkey ranks among the most tea consuming countries. The countries after Turkey are: 
+        Afghanistan, Libya, Qatar and the United Kingdom. 
+        The country producing the most tea with the title of China. 
+        But in all these countries, most people know what tea is; 
+        he doesn't know his adventure until he reaches our glasses.</p>
+    
+    <br>
+    <h2 class="w3-card-4 w3-brown">What Is The Tea?</h2>
+    <img src="what_is_the_tea.jpg"></img>
+    <p>The tea beverage is prepared by brewing the dried tea tree leaves in hot water. 
+        There are many types of tea, originally divided into 5 main types: 
+        black tea, white tea, green tea, oolong and Pu-erh tea. All these teas come from the same plant. 
+        The botanical name of this subtropical plant, always staying green, is 'Camellia sinensis'. 
+        There are two subspecies of Camellia sinensis: sinensis (Chinese tea) and assamica (Assam or Indian tea).
+        In other words, none of the plants, such as chamomile, lemon balm, sage and fruit 'teas', which are called 
+        'tea' in most languages, actually have anything to do with tea.</p>
+
+    <br>
+    <h2 class="w3-card-4 w3-brown">If All Species Are The Same Plants, What Distinguishes Them?</h2>
+    <img src="different_types_of_tea.jpg"></img>
+    <p>Tea is classified as 'green', 'black' and 'white'; production of tea. 
+        The tea leaves are dried after collection and the dried leaves are subjected to 'rolling' 
+        to release the aroma-suppressing enzymes and oils. The type of leaves oxidized during 
+        the rolling phase determines how long they are oxidized. The longer they wait, the darker the color and 
+        the aroma becomes heavier. As you can imagine, the most oxidized tea type is black tea. 
+        When the desired level of oxidation is reached, the leaves are exposed to fire to stop the process. 
+        This is also done to remove moisture from the leaves and make the tea last longer.
+        This process is called the Orthodox method. Apart from the Orthodox, 
+        there is also a method called ez ez-tear-off ((CTC), which was created during World War II and used to 
+        increase the amount of tea that can be filled into the chest. Once the leaves have dried, 
+        they are transferred to a machine that crushes, tears and rolls them, as the name suggests. 
+        It is faster than the orthodox method and the resulting shape is more suitable for tea bags.
+        After these processes, reaching us, tea, without pain; it is up to us to brew the aroma 
+        as much as possible. But the experts say that the methods we follow are completely wrong.</p>
+    <p>For more information about <b>"types of tea"</b>, click the button below.</p>
+    <button id="btntag" class="w3-btn w3-gray w3-round" onclick="Types(this.innerHTML)">types-of-tea</button>
+
+    <br>
+    <h2 class="w3-card-4 w3-brown">How To Make A Good Tea?</h2>
+    <img src="how_to_make.jpg"></img>
+    <p>First, use soft water. Also, never use tap water. This may cause you to get a turbid tea. 
+        Pay attention to the temperature of the water. Not every tea is made with water at the same temperature, 
+        which means that boiling water may ruin the aroma of your tea. 
+        Finally, set the brewing time well. When brewing tea, tannins, amino acids and flavors slowly mix into 
+        the water and how long it will take depends on the type of tea.</p>
+
+    <br>
+    <h2 class="w3-card-4 w3-brown">Chemistry of Tea</h2>
+    <img src="chemistry_of_tea.jpg"></img>
+    <p>The aromas that make up the taste and smell of tea mix into the water in a very short time. 
+        Mild polyphenols, caffeine and the factors that affect consistency take a little longer while 
+        heavy polyphenols, flavanols and tannins take the most time to mix with water.
+        With reasonable brewing method, tannins enrich the aroma of the tea while brewing too high heat or 
+        too long; more than the amount of tannin will cause tea to become bitter. 
+        If you want a stiffer tea without tasting it, it may be a more sensible option 
+        to use more leaves instead of brewing more.</p>
+
+    <p>Click to see <b>"the molecule structure of tea"</b>.</p>
+
+    <button id="btntag" class="w3-btn w3-gray w3-round" onclick="Molecule(this.innerHTML)">Xd0WGTTxgm_8WM</button>
+
+    <br>
+    <h2 class="w3-card-4 w3-brown">Sachet Tea Not Recommended</h2>
+    <img src="sachet_tea.jpg"></img>
+    <p>Because of its ease, the tea bags that we use at home, at work and at picnics are not recommended because 
+        they are filled with poor quality, deformed leaves when they are produced. In addition, 
+        the fact that the leaves are not whole prevents them from obtaining the desired aroma as it exposes 
+        more oxygen and light. That's the adventure, features and forms of tea that most of us consume every day. 
+        There are many ways to make perfect tea. But you can get your perfect tea just by listening to your own taste.
+    </p>
+        <table class="w3-card-4" border="5px">
+            <thead>
+                <td bgcolor="green">&#9989; Benefits of Tea</td>
+                <td bgcolor="red">&#10060; Detriments of Tea</td>
+            </thead>
+            <tr>
+                <td><br><li>Tea contains antioxidants.</li><hr>
+                    <li>Tea has less caffeine than coffee.</li><hr>
+                    <li>Tea may reduce your risk of heart attack and stroke.</li><hr>
+                    <li>Tea may help with weight loss.</li><hr>
+                    <li>Tea may help protect your bones.</li><hr>
+                    <li>Tea may keep your smile bright.</li><hr>
+                    <li>Tea may boost the immune system.</li><hr>
+                    <li>Tea may help battle cancer.</li><hr>
+                    <li>Herbal tea may soothe the digestive system.</li><br>
+                </td>
+                <td><li>The most important disadvantage of drinking tea is <br>
+                        that too much of the beverage brings the chance of gastric ulcers. <br>
+                        Person should remember that tea has lesser amount of caffeine than coffee.</li><hr>
+                    <li>Another disadvantage of drinking tea is 
+                        that tea has tannic acid. <br>
+                        If person drink tea is the maximum quantity then <br>
+                        he may experience the problem of iron deficiency and anemia.<br> 
+                        It is advisable that person should consume tea <br>
+                        almost an hour after he has eaten meal.</li><hr>
+                    <li>Lastly, if person consume too much tea then <br>
+                        he may experience different diseases like <br>
+                        kidney disease and liver disease.</li>
+                </td>
+            </tr>
+        </table>
+        <p>For more information about <b>"tea"</b>, click the button below.</p>
+        <button id="btntag" class="w3-btn w3-gray w3-round" onclick="Info(this.innerHTML)">100-facts-about-tea</button>
+    </div>
+
+    </div>
+
+    <div class="footer">
+    <h2>Made By Ertugrul</h2>
+    <a href="#top">Go to top</a>
+    </div>
+    </body>
+</html>
